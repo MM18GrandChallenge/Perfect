@@ -291,7 +291,7 @@ ul.contact li a.icon-rss:before {
 
 #logo {
     position: absolute;
-    top: 1em;
+    top: 0;
     left: 0;
 }
 
@@ -553,4 +553,85 @@ aside {
 .notice-txt {
     font-size: 16px;
     color: #e24545
+}
+
+header .contact-box {
+    float: right;
+    font-size: 14px;
+    margin-top: 32px
+}
+
+.contact-box ul {
+    overflow: hidden;
+    text-align: left
+}
+
+.contact-box ul li {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    margin: 10px;
+    line-height: 15px;
+    padding-left: 20px
+}
+
+.contact-box ul li .contact-icon {
+    margin-right: 4px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/icon-sprite.png");
+    background-repeat: no-repeat
+}
+
+.contact-box ul li .contact-icon.icon-reg {
+    background-position: -22px 1px
+}
+
+.contact-box ul li .contact-icon.icon-mail {
+    background-position: 0 1px
+}
+
+.contact-box ul li a {
+    color: #303030;
+    cursor: pointer
+}
+
+.contact-box ul li:hover a, header .contact-box ul li:active a {
+    text-decoration: none;
+    color: #72b626
+}
+
+.contact-box ul li:hover .icon-reg, header .contact-box ul li:active .icon-reg {
+    background-position: -22px -13px
+}
+
+.contact-box ul li:hover .icon-mail, header .contact-box ul li:active .icon-mail {
+    background-position: 0 -13px
+}
+
+.contact-box ul li:first-child {
+    border-right: 1px solid #d6d6d6;
+    padding-right: 10px
+}
+
+@media all and (max-width: 767px) {
+    .contact-box {
+        float: left;
+        text-align: center;
+        margin-top: 20px
+    }
+
+    .contact-box ul li {
+        display: inline-block;
+        margin: 5px 10px 0;
+        border-right: none
+    }
+
+    .contact-box ul li:first-child {
+        border-right: none
+    }
 }
