@@ -549,3 +549,8 @@ aside {
 .img {
     width: 100%;
 }
+
+.notice-txt {
+    font-size: 16px;
+    color: #e24545
+}
