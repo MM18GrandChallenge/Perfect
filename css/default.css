@@ -171,7 +171,8 @@ ul.contact li a.icon-rss:before {
 .button {
     display: inline-block;
     padding: 0em 3em;
-    background: #CA85DB;
+    /*background: #CA85DB;*/
+    background: rgba(221, 60, 113, 1);
     border-radius: 8px;
     letter-spacing: 0.20em;
     line-height: 4em;
@@ -339,9 +340,11 @@ ul.contact li a.icon-rss:before {
 }
 
 #menu .current_page_item a {
-    border: 2px solid #CA85DB;
+    /*border: 2px solid #CA85DB;*/
+    border: 2px solid rgba(221, 60, 113, 1);
     border-radius: 6px;
-    color: #CA85DB;
+    /*color: #CA85DB;*/
+    color: rgba(221, 60, 113, 1);
 }
 
 #menu .icon {
@@ -354,7 +357,8 @@ ul.contact li a.icon-rss:before {
 .banner {
     overflow: hidden;
     padding: 7em 0em 5em 0em;
-    background: #CA85DB url(../images/banner.png) no-repeat center;
+    background: rgba(221, 60, 113, 1) url(../images/banner.png) no-repeat center;
+    /*background: #CA85DB url(../images/banner.png) no-repeat center;*/
     background-size: cover;
     text-align: center;
     color: rgba(255, 255, 255, .8);
@@ -442,7 +446,8 @@ ul.contact li a.icon-rss:before {
 .featured {
     overflow: hidden;
     padding: 5em 0em;
-    background: #CA85DB;
+    /*background: #CA85DB;*/
+    background: rgba(221, 60, 113, 1);
     color: rgba(255, 255, 255, .8);
     text-align: center;
 }
@@ -455,7 +460,8 @@ ul.contact li a.icon-rss:before {
     background: #FFF;
     margin-top: 3em;
     font-size: 1em;
-    color: #CA85DB;
+    /*color: #CA85DB;*/
+    color: rgba(221, 60, 113, 1);
 }
 
 .featured .title {
