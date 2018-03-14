@@ -6,7 +6,8 @@ body {
     margin: 0px;
     padding: 0px;
     background: #9C39AE;
-    font-family: 'Varela', sans-serif;
+    /*font-family: 'Varela', sans-serif;*/
+    font-family: 'Palatino Linotype', sans-serif;
     font-size: 11pt;
     font-weight: 300;
     color: #656565;
@@ -226,7 +227,7 @@ ul.contact li a.icon-rss:before {
 
 .box1,
 .box2,
-.box3,
+.box3
 {
     float: left;
     margin-right: 20px;
@@ -640,4 +641,9 @@ header .contact-box {
     .contact-box ul li:first-child {
         border-right: none
     }
+}
+
+* {
+    font-size: 100%;
+    font-family: 'Palatino Linotype';
 }

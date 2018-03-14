@@ -8,6 +8,11 @@
     font-style: normal
 }
 
+@font-face {
+    font-family: 'Palatino Linotype';
+    src: url('../font/palatino-linotype.ttf');
+}
+
 /*********************************************************************************/
 /* Icons                                                                         */
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
@@ -20,7 +25,8 @@
 
 .fa:before {
     display: inline-block;
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
+    /*font-family: 'Palatino Linotype', sans-serif;*/
     font-size: 1.25em;
     text-decoration: none;
     font-style: normal;
