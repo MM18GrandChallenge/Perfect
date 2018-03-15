@@ -13,6 +13,10 @@
     src: url('../font/palatino-linotype.ttf');
 }
 
+@font-face {
+    font-family: 'Georgia';
+    src: url('../font/georgia.ttf');
+}
 /*********************************************************************************/
 /* Icons                                                                         */
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
