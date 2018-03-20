@@ -202,11 +202,13 @@ ul.contact li a.icon-rss:before {
 
 .title {
     margin-bottom: 3em;
+    text-align: left;
 }
 
 .title h2 {
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 28px;
+    text-align: left;
 }
 
 .title .byline {
@@ -303,7 +305,7 @@ ul.contact li a.icon-rss:before {
 
 #logo a {
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     color: #89249B;
 }
 
@@ -367,7 +369,7 @@ ul.contact li a.icon-rss:before {
 
 .banner .title {
     margin-bottom: 1em;
-    text-transform: uppercase !important;
+    text-transform: none;
 }
 
 .banner .title h2 {
@@ -559,6 +561,10 @@ aside {
     margin-bottom: 10px;
 }
 
+.img-organizer {
+    width: 100%;
+}
+
 .notice-txt {
     font-size: 16px;
     color: #e24545
@@ -666,4 +672,8 @@ header .contact-box {
 
 .card-content {
     height: 330px;
+}
+
+.center {
+    text-align: center;
 }
