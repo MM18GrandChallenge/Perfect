@@ -554,7 +554,9 @@ aside {
 }
 
 .img {
-    width: 100%;
+    /*width: 100%;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .notice-txt {
