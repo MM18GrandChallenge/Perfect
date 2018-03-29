@@ -135,7 +135,7 @@
                     Each team is allowed to submit the results of at most five runs, selecting one run as the primary run of the submission (we do not guarantee that we will evaluate additional runs), which will be measured for performance comparison across teams.
                     <br />
                     <br />
-                    Each submission is required to be formatted as a <strong>text file</strong>, where each line contains an image id followed by the predicted label. It looks as follows:
+                    Each submission is required to be formatted as a <strong>csv file</strong>, where each line contains an image id followed by the predicted label. It looks as follows:
                     <!-- https://github.com/social-media-prediction/SMPMultimediaChallengeMaterials/raw/master/EvaluationJsonExample.zip -->
                 </p>
                 <br />
@@ -155,10 +155,10 @@
                             <div class="panel-body" style="text-align: left;">
                 <pre>
                   <code>
-&lt;image id#1&gt; &lt;predicted label#1&gt;
-&lt;image id#2&gt; &lt;predicted label#2&gt;
+&lt;Test Image ID id#1&gt; &lt;Training Image ID id#1&gt;
+&lt;Test Image ID id#2&gt; &lt;Training Image ID id#2&gt;
 …
-&lt;image id#N&gt; &lt;predicted label#N&gt;
+&lt;Test Image ID id#N&gt; &lt;Training Image ID id#N&gt;
                   </code>
                 </pre>
                             </div>
