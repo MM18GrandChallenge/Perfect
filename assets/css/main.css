@@ -52,7 +52,7 @@ thead{background: #282828;color: #fff;border:solid 1px #282828;}
 .tech_content{position: absolute;top: 3%;margin-left:8%;}
 .video_top{position: absolute;top:0;left: 0;}
 .video_box{width: 100%;}
-.line{border-top: solid 1px #fff;} 
+.line{border-top: solid 1px #fff;width: 90%;} 
 .line2{border-top: solid 1px #333;} 
 .tech2{margin-top:56%!important;}
 .texth3{font-weight: 300;}
@@ -309,7 +309,7 @@ table{width: 99%;font-size: 13px;}
 h1{font-size: 30px;line-height: 35px;}
 h2{font-size: 27px;line-height: 40px;font-weight: 100;margin-bottom: 10px;}
 h3 {font-size: 16px;line-height: 24px;}
-p{font-size: 15px;line-height: 24px;padding: 5px 1%;text-align: left;}
+p{font-size: 15px;line-height: 24px;padding: 5px 1%;text-align: left;width: 92%;}
 pre{font-size: 11px;}
 .texth3{font-size: 16px;}
 .h3w{font-size: 16px;}

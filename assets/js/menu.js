@@ -60,11 +60,11 @@ function myFunction() {
 $(function() {
     // Add active class to the current button (highlight it)
     $('ul li a').click(function () {
-        console.log("ul li a click!!: ", $('li a'));
-        console.log($(this));
+        //console.log("ul li a click!!: ", $('li a'));
+        //console.log($(this));
         $('li a').removeClass("menu-active");
         $(this).addClass("menu-active");
-        console.log($(this));
+        //console.log($(this));
     });
 });
 
@@ -72,30 +72,30 @@ function setActiveListElements(event){
     var windowPos = $(window).scrollTop();
     //console.log("position: ", windowPos);
     /*
-    console.log($("#item1").position().top - windowPos);
-    console.log($("#item3").position().top - windowPos - $("#item2").height());
-    console.log($("#item3").position().top - windowPos);
-    console.log($("#item4").position().top - windowPos);
-    console.log($("#item5").position().top - windowPos);
-    console.log($("#item6").position().top - windowPos);
-    console.log($("#item7").position().top - windowPos);
-    console.log($("#item8").position().top - windowPos);
-    console.log($("#item9").position().top - windowPos);
-    console.log($("#item10").position().top - windowPos);
-    console.log($("#item11").position().top - windowPos);
-    */
+     console.log($("#item1").position().top - windowPos);
+     console.log($("#item3").position().top - windowPos - $("#item2").height());
+     console.log($("#item3").position().top - windowPos);
+     console.log($("#item4").position().top - windowPos);
+     console.log($("#item5").position().top - windowPos);
+     console.log($("#item6").position().top - windowPos);
+     console.log($("#item7").position().top - windowPos);
+     console.log($("#item8").position().top - windowPos);
+     console.log($("#item9").position().top - windowPos);
+     console.log($("#item10").position().top - windowPos);
+     console.log($("#item11").position().top - windowPos);
+     */
     /*
-    console.log($("#item1").position().top - windowPos);
-    console.log( "222: ", ($("#item1m").height()/2));
-    console.log($("#item3").position().top - windowPos - ($("#item2").height() / 2));
-    console.log($("#item4").position().top - windowPos - ($("#item3").height() / 2));
-    console.log($("#item5").position().top - windowPos - ($("#item4").height() / 2));
-    console.log($("#item6").position().top - windowPos - ($("#item5").height() / 2));
-    console.log($("#item7").position().top - windowPos - ($("#item6").height() / 2));
-    console.log($("#item8").position().top - windowPos - ($("#item7").height() / 2));
-    console.log($("#item9").position().top - windowPos - ($("#item8").height() / 2));
-    console.log($("#item11").position().top - windowPos - ($("#item10").height() / 2));
-*/
+     console.log($("#item1").position().top - windowPos);
+     console.log( "222: ", ($("#item1m").height()/2));
+     console.log($("#item3").position().top - windowPos - ($("#item2").height() / 2));
+     console.log($("#item4").position().top - windowPos - ($("#item3").height() / 2));
+     console.log($("#item5").position().top - windowPos - ($("#item4").height() / 2));
+     console.log($("#item6").position().top - windowPos - ($("#item5").height() / 2));
+     console.log($("#item7").position().top - windowPos - ($("#item6").height() / 2));
+     console.log($("#item8").position().top - windowPos - ($("#item7").height() / 2));
+     console.log($("#item9").position().top - windowPos - ($("#item8").height() / 2));
+     console.log($("#item11").position().top - windowPos - ($("#item10").height() / 2));
+     */
     if (windowPos >= $("#item11").position().top - windowPos - ($("#item10").height() / 2)) { // leader board
         $('li a').removeClass("menu-active");
         $('#menu11').addClass("menu-active");
@@ -128,38 +128,38 @@ function setActiveListElements(event){
         $('#menu1').addClass("menu-active");
     }
     /*
-    if (windowPos >= 7250) { // leader board
-        $('li a').removeClass("menu-active");
-        $('#menu11').addClass("menu-active");
-    } else if (windowPos >= 5800) { // Task Description
-        $('li a').removeClass("menu-active");
-        $('#menu9').addClass("menu-active");
-    } else if (windowPos >= 4800) { // Dataset
-        $('li a').removeClass("menu-active");
-        $('#menu8').addClass("menu-active");
-    } else if (windowPos >= 4160) { // Task Chairs & Main Contact
-        $('li a').removeClass("menu-active");
-        $('#menu7').addClass("menu-active");
-    } else if (windowPos >= 3600) { // Sponsors
-        $('li a').removeClass("menu-active");
-        $('#menu6').addClass("menu-active");
-    } else if (windowPos >= 2900) { // Main Organizers
-        $('li a').removeClass("menu-active");
-        $('#menu5').addClass("menu-active");
-    } else if (windowPos >= 2300) { // Citation
-        $('li a').removeClass("menu-active");
-        $('#menu4').addClass("menu-active");
-    } else if (windowPos >= 1500) { // Timeline
-        $('li a').removeClass("menu-active");
-        $('#menu3').addClass("menu-active");
-    } else if (windowPos >= 600) { // Participation
-        $('li a').removeClass("menu-active");
-        $('#menu2').addClass("menu-active");
-    } else { // Overview
-        $('li a').removeClass("menu-active");
-        $('#menu1').addClass("menu-active");
-    }
-    */
+     if (windowPos >= 7250) { // leader board
+     $('li a').removeClass("menu-active");
+     $('#menu11').addClass("menu-active");
+     } else if (windowPos >= 5800) { // Task Description
+     $('li a').removeClass("menu-active");
+     $('#menu9').addClass("menu-active");
+     } else if (windowPos >= 4800) { // Dataset
+     $('li a').removeClass("menu-active");
+     $('#menu8').addClass("menu-active");
+     } else if (windowPos >= 4160) { // Task Chairs & Main Contact
+     $('li a').removeClass("menu-active");
+     $('#menu7').addClass("menu-active");
+     } else if (windowPos >= 3600) { // Sponsors
+     $('li a').removeClass("menu-active");
+     $('#menu6').addClass("menu-active");
+     } else if (windowPos >= 2900) { // Main Organizers
+     $('li a').removeClass("menu-active");
+     $('#menu5').addClass("menu-active");
+     } else if (windowPos >= 2300) { // Citation
+     $('li a').removeClass("menu-active");
+     $('#menu4').addClass("menu-active");
+     } else if (windowPos >= 1500) { // Timeline
+     $('li a').removeClass("menu-active");
+     $('#menu3').addClass("menu-active");
+     } else if (windowPos >= 600) { // Participation
+     $('li a').removeClass("menu-active");
+     $('#menu2').addClass("menu-active");
+     } else { // Overview
+     $('li a').removeClass("menu-active");
+     $('#menu1').addClass("menu-active");
+     }
+     */
 }
 
 $(window).scroll(function() {
