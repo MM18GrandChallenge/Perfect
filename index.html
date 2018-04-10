@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>AI Meets Beauty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById('s_bar');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+        $(function () {
+            $("#s_menu").click(function () {
+                $("#sider_box").toggle();
+            })
+        });
+
+    </script>
+
+    <style type="text/css">
+    </style>
+    <!-- menu tab-->
+    <script language="javascript">
+        window.onload = function () {
+            var nav = document.getElementById("tab").getElementsByTagName("li");
+            var con = document.getElementById("con").getElementsByTagName("div");
+            for (i = 0; i < nav.length; i++) {
+                nav[i].index = i;
+                nav[i].onmouseover = function () {
+                    for (var n = 0; n < con.length; n++) {
+                        con[n].style.display = "none";
+                        nav[n].className = "";
+                    }
+                    con[this.index].style.display = "block"
+                    nav[this.index].className = "cur";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu-panel">
+        <div class="logo"><img src="assets/images/perfect_logo.png"></div>
+        <ul id="menu-toc" class="menu-toc">
+            <li class=""><a id="menu1" href="#item1" class="menu-active">Overview</a></li>
+            <li class=""><a id="menu2" href="#item2">Participation</a></li>
+            <li class=""><a id="menu3" href="#item3">Timeline</a></li>
+            <li class=""><a id="menu4" href="#item4">Citation</a></li>
+            <li class=""><a id="menu5" href="#item5">Main Organizers</a></li>
+            <li class=""><a id="menu6" href="#item6">Sponsors</a></li>
+            <li class=""><a id="menu7" href="#item7">Main Contact</a></li>
+            <li class=""><a id="menu9" href="#item9">Challenge</a></li>
+            <li class=""><a id="menu11" href="#item11">Leader Board</a></li>
+            <li class=""><a id="menu8" href="#item8">Dataset</a></li>
+            <li class=""><a href="https://recognition-challenge.typeform.com/to/oWXgce" target="blank">Register</a></li>
+            <li class=""><a href="mailto:challenge@perfectcorp.com">Email</a></li>
+        </ul>
+    </div>
+    <!--Mobile -->
+    <div class="s_bar" id="s_bar">
+        <div class="s_menu" id="s_menu"><a href="#"></a></div>
+        <div class="s_logo"><img src="assets/images/perfect_logo.png"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="sider_box" id="sider_box" style="display: none;">
+        <div class="sider">
+            <div class="nav-menu">
+                <div id="sider_box_menu" class="row">
+                    <div class="col-md-1"><a id="menu_m1" href="#item1"><span>Overview</span>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                    </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m2" href="#item2"><span>Participation</span>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                    </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m3" href="#item3"><span>Timeline</span>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                    </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m4" href="#item4"><span>Citation</span>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                    </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m5" href="#item5"><span>Main Organizers</span>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                    </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m6" href="#item6"><span>Sponsors</span>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                    </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m7" href="#item7"><span>Main Contact</span></a>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m8" href="#item8"><span>Challenge</span></a>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m11" href="#item11"><span>Leader Board</span></a>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-1"><a id="menu_m9" href="#item9"><span>Dataset</span></a>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-1"><a href="https://recognition-challenge.typeform.com/to/oWXgce" target="blank"><span>Register</span></a>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-1"><a href="mailto:challenge@perfectcorp.com"><span>Email</span></a>
+                        <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--overview-->
+    <div class="pages overview_pc" id="item1">
+        <div style="background:#000;background-attachment:fixed;background-size:cover;">
+            <div class="video_top">
+                <video height="auto" playsinline autoplay loop muted class="video_box">
+                    <source src="assets/images/index.mp4" type="video/mp4" loop="" playsinline="" autoplay="" muted="">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tech_content">
+                    <h1 class="top_title">AI Meets Beauty</i></h1>
+                    <h3 class="text_wt texth3">Perfect Half Million Beauty Product Image Recognition Challenge</h3>
+                    <div class="model">
+                        <img src="assets/images/model.jpg">
+                    </div>
+                    <p class="text_wt text_over">As the revolution of artificial intelligence (AI) is underway around
+                        the globe, AI has already begun to reshape industries including the multibillion dollar beauty
+                        and personal care industry. In order to promote impactful research and problem solving in this
+                        disruptive AI beauty space, the leading beauty app developer, Perfect Corp. in collaborating
+                        with CyberLink Corp. and Academia Sinica to provide a large-scale image dataset of over half
+                        million images of beauty and personal care products, namely the Perfect-500K dataset.
+                        Perfect-500K is vast in scale, rich and diverse in content in order to collect as many as
+                        possible beauty and personal care items from major e-commerce sites.<br><br>
+                        <i>*Reaching 580 million app downloads for its YouCam Apps suite, installs worldwide as of March
+                            2018</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pages overview_m" id="item1m">
+        <div class="bg"
+             style="background-image: url(assets/images/17.jpg);background-attachment:fixed;background-size:cover;">
+            <div class="main_content feature over_top">
+                <h1>AI Meets Beauty</i></h1>
+                <h3 class="text_wt texth3">Perfect Half Million Beauty Product Image Recognition Challenge</h3>
+                <div class="model">
+                    <img src="assets/images/model.jpg">
+                </div>
+                <p class="text_wt text_over">As the revolution of artificial intelligence (AI) is underway around the
+                    globe, AI has already begun to reshape industries including the multibillion dollar beauty and
+                    personal care industry. In order to promote impactful research and problem solving in this
+                    disruptive AI beauty space, the leading beauty app developer, Perfect Corp. in collaborating with
+                    CyberLink Corp. and Academia Sinica to provide a large-scale image dataset of over half million
+                    images of beauty and personal care products, namely the Perfect-500K dataset. Perfect-500K is vast
+                    in scale, rich and diverse in content in order to collect as many as possible beauty and personal
+                    care items from major e-commerce sites.<br><br>
+                    <i>*Reaching 580 million app downloads for its YouCam Apps suite, installs worldwide as of March
+                        2018</i><br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="bg ftbg"
+             style="background-image: url(assets/images/18.jpg);background-attachment:fixed;background-size:cover;">
+            <div class="main_content feature tech2" id="item2">
+                <h2>Participation</h2>
+                <div class="line2"></div>
+                <div class="text_bk">
+                    <p class="text">
+                        The Challenge is a team-based competition. Each team can have one or more members, and each
+                        individual can only be part of one team.<br>
+                        The Perfect Challenge 2018 is open to the public. Interested individuals, researchers/developers
+                        of tertiary education, research institutes or organizations from different sectors and fields
+                        are welcome to take part independently or as a team.<br><br>Disclaimer: The organizers reserve
+                        the right to disqualify participants if the information provided on the application is
+                        inaccurate or misleading. The dataset provided by the organizer can only be used for this
+                        challenge and its related research activities. Commercial use is strictly prohibited.<br><br>
+                        At the end of the Challenge, all teams will be ranked based on both objective evaluation and
+                        subjective human evaluation criteria described above. The top three performing teams will
+                        receive award certificates and cash prizes:</p>
+                    <img class="award" src="assets/images/award.png">
+                    <img class="awardm" src="assets/images/awardm.png">
+                    <p class="text">At the same time, all accepted submissions are qualified for the conference’s grand
+                        challenge award competition. Please note that each winning team for the cash prizes is required
+                        to open source their proposed solution on Github before qualifying to receive the cash
+                        prizes.</p><br><br>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pages" id="item3">
+            <div class="bg"
+                 style="background-image: url(assets/images/17.jpg);background-attachment:fixed;background-size:cover;">
+                <div class="main_content feature">
+                    <h2 class="text_wt">Timeline</h2>
+                    <div class="line"></div>
+                    <p class="text_wt">Unless otherwise stated, all deadlines are at 23:59 Anywhere on Earth (AoE),
+                        UTC-12.<br>
+                        please follow the instructions on the main conference website</p>
+                    <br><br><br>
+                    <div class="chart"><img src="assets/images/chartpc.png"></div>
+                    <div class="chartm"><img src="assets/images/chartm.png"></div>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="pages" id="item4">
+            <div class="bg ftbg"
+                 style="background-image: url(assets/images/18.jpg);background-attachment:fixed;background-size:cover;">
+                <div class="main_content feature">
+                    <h2>Citation</h2>
+                    <div class="line2"></div>
+                    <hr>
+                    <div class="text_bk">
+                        <p class="text" style="text-align: left;">If you are reporting results of the challenge or
+                            using the dataset, please cite with:</p>
+                        <pre>
+					  	<code>@misc{perfecthalfmillionchallenge2018,title={Perfect Corp. Challenge 2018: <br>Half Million Beauty Product Image Recognition,author={Wen-Huang Cheng,<br>Jia Jia, Si Liu, Jianlong Fu, Johnny Tseng, and Jau Huang,howpublished=<br>{\url{https://challenge2018.perfectcorp.com/index.html},year={2018}}</code>
+     				</pre>
+                        <br><br><br><br><br>
+                        <h2>Paper Submission</h2>
+                        <hr>
+                        <p class="text" style="text-align: left;">Please follow the guideline of ACM Multimedia 2018
+                            Grand Challenge for the paper submission.</p>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pages" id="item5">
+            <div class="bg"
+                 style="background-image: url(assets/images/17.jpg);background-attachment:fixed;background-size:cover;">
+                <div class="main_content feature">
+                    <h2 class="text_wt">Main Organizers</h2>
+                    <div class="line"></div>
+                    <ul class="row contact-box text_wt">
+                        <li class="col-lg-2 col-md-3 col-sm-3">
+                            <div class="contact-card card-content center">
+                                <img class="img-organizer" src="assets/images/photo-jauhuang.jpg" alt="Jau Huang">
+                                <div class="card-text">
+                                    <h4>Jau Huang</h4>
+                                    <!--<a href="mailto:wubo@ict.ac.cn">wubo@ict.ac.cn</a>-->
+                                    <p>CyberLink Corp.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-3 col-sm-3">
+                            <div class="contact-card card-content center">
+                                <img class="img-organizer" src="assets/images/photo-johnnytseng.jpg"
+                                     alt="Johnny Tseng">
+                                <div class="card-text">
+                                    <h4>Johnny Tseng</h4>
+                                    <!--<a href="mailto:wubo@ict.ac.cn">wubo@ict.ac.cn</a>-->
+                                    <p>Perfect Corp.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-3 col-sm-3">
+                            <div class="contact-card card-content center">
+                                <img class="img-organizer" src="assets/images/photo-wenhuangcheng.jpg"
+                                     alt="Wen-Huang Cheng">
+                                <div class="card-text">
+                                    <h4 class="h4sp">Wen-Huang Cheng</h4>
+                                    <!--<a href="mailto:whcheng@citi.sinica.edu.tw">whcheng@citi.sinica.edu.tw</a>-->
+                                    <p>Academia Sinica</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-3 col-sm-3">
+                            <div class="contact-card card-content center">
+                                <img class="img-organizer" src="assets/images/photo-jiajia.jpg" alt="Jia Jia">
+                                <div class="card-text">
+                                    <h4>Jia Jia</h4>
+                                    <!--<a href="mailto:hqsiswiliam@gmail.com">hqsiswiliam@gmail.com</a>-->
+                                    <p>Tsinghua University</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-3 col-sm-3">
+                            <div class="contact-card card-content center">
+                                <img class="img-organizer" src="assets/images/photo-siliu.jpg" alt="Si Liu">
+                                <div class="card-text">
+                                    <h4>Si Liu</h4>
+                                    <!--<a href="mailto:zhyd@ict.ac.cn">zhyd@ict.ac.cn</a>-->
+                                    <p>Chinese Academy of Sciences</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-3 col-sm-3">
+                            <div class="contact-card card-content center">
+                                <img class="img-organizer" src="assets/images/photo-jianlongfu.jpg"
+                                     alt="Jianlong Fu">
+                                <div class="card-text">
+                                    <h4>Jianlong Fu</h4>
+                                    <!--<a href="mailto:tmei@microsoft.com">tmei@microsoft.com</a>-->
+                                    <p>Microsoft Research</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pages" id="item6">
+            <div class="bg ftbg"
+                 style="background-image: url(assets/images/18.jpg);background-attachment:fixed;background-size:cover;">
+                <div class="main_content feature">
+                    <h2>Sponsors</h2>
+                    <div class="line2"></div>
+                    <br>
+                    <a href="https://tw.perfectcorp.com/" target="blank"><img src="assets/images/perfect_logo.png"
+                                                                              class="log"></a>
+                    <p>PerfectCorp is dedicated to transforming how consumers, content creators and beauty brands
+                        interact together. Our unique platform is the premier online destination for all beauty
+                        lovers. Our PERFECTTM apps, YouCam Makeup, recently voted Best Fashion & Apparels App* of
+                        2015, and market leading YouCam Perfect redefine virtual beauty for tens of millions of
+                        users.
+                        <br>
+                        *YouCam Makeup is the winner of 2015 Appy Award of Best Fashion & Apparels App</p>
+                    <br>
+                    <a href="https://tw.cyberlink.com/index_zh_TW.html?r=1" target="blank"><img
+                            src="assets/images/cyberlink_logo2.png" class="log"></a>
+                    <div class="col-md-6">
+                        <p>Founded in 1996, CyberLink Corp. is the world’s leading multimedia software company and
+                            pioneer in video and audio technologies on PCs and portable devices including tablets
+                            and smartphones. From what began as a mission to create superb digital multimedia
+                            products for consumers by a group of National Taiwan University students led by
+                            Professor Huang, CyberLink has since grown into a global and award-winning brand with
+                            nearly 30 products and a solid reputation for efficiently delivering innovative,
+                            interoperable solutions.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pages" id="item7">
+            <div class="bg ftbg"
+                 style="background-image: url(assets/images/17.jpg);background-attachment:fixed;background-size:cover;">
+                <div class="main_content feature contact-box">
+                    <h2 class="text_wt">Task Chairs &amp; Main Contact</h2>
+                    <div class="line"></div>
+                    <ul class="row">
+                        <li class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="contact-card center" style="min-height: 0px;">
+                                <aside class="contact-data">
+                                    <h3>Wen-Huang Cheng</h3>
+                                    <a class="contact-mail" href="mailto:whcheng@citi.sinica.edu.tw">whcheng@citi.sinica.edu.tw</a>
+                                    <h6>Academia Sinica</h6>
+                                    <br>
+                                </aside>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="contact-card center" style="min-height: 0px;">
+                                <aside class="contact-data">
+                                    <h3 class="h3w">Shintami Chusnul Hidayati</h3>
+                                    <a class="contact-mail" href="mailto:shintami@citi.sinica.edu.tw">shintami@citi.sinica.edu.tw</a>
+                                    <h6>Academia Sinica</h6>
+                                    <br>
+                                </aside>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="contact-card center" style="min-height: 0px;">
+                                <aside class="contact-data">
+                                    <h3>Yu-Ting Chang</h3>
+                                    <a class="contact-mail" href="mailto:juliachang@citi.sinica.edu.tw">juliachang@citi.sinica.edu.tw</a>
+                                    <h6>Academia Sinica</h6>
+                                    <br>
+                                </aside>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pages" id="item8">
+            <div class="bg ftbg"
+                 style="background-image: url(assets/images/18.jpg);background-attachment:fixed;background-size:cover;">
+                <div class="main_content feature">
+                    <h2>Dataset</h2>
+                    <div class="line2"></div>
+                    <p>Perfect-500K is a collection of beauty and personal care items from 14 popular e-commerce sites,
+                        including Amazon (USA, India), Cult Beauty, Flipkart, Galleria, Gmarket, JD.COM, Nordstrom,
+                        Sephora,
+                        Strawberrynet, Target, Walgreens, Walmart and Yahoo Shopping Mall. The table below shows the
+                        detailed statistics.</p>
+
+                    <div class="col-md-6">
+                        <table class="table table-striped leaderboard-table">
+                            <thead>
+                            <tr>
+                                <th>Source</th>
+                                <th># of images</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Amazon (USA)</td>
+                                <td>129192</td>
+                            </tr>
+                            <tr>
+                                <td>Amazon (India)</td>
+                                <td>208936</td>
+                            </tr>
+                            <tr>
+                                <td>Cult Beauty</td>
+                                <td>3139</td>
+                            </tr>
+                            <tr>
+                                <td>Flipkart</td>
+                                <td>38726</td>
+                            </tr>
+                            <tr>
+                                <td>Yahoo Shopping Mall</td>
+                                <td>22407</td>
+                            </tr>
+                            <tr>
+                                <td>Target</td>
+                                <td>11896</td>
+                            </tr>
+                            <tr>
+                                <td>JD.COM</td>
+                                <td>5084</td>
+                            </tr>
+                            <tr>
+                                <td>Sephora</td>
+                                <td>7099</td>
+                            </tr>
+                            <tr>
+                                <td>Strawberrynet</td>
+                                <td>16040</td>
+                            </tr>
+                            <tr>
+                                <td>Walgreens</td>
+                                <td>7273</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>34428</td>
+                            </tr>
+                            <tr>
+                                <td>Gmarket</td>
+                                <td>19579</td>
+                            </tr>
+                            <tr>
+                                <td>Nordstrom</td>
+                                <td>8786</td>
+                            </tr>
+                            <tr>
+                                <td>Galleria</td>
+                                <td>8142</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TOTAL</strong></td>
+                                <td><strong>520727</strong></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="bg ftbg"
+             style="background-image: url(assets/images/17.jpg);background-attachment:fixed;background-size:cover;">
+            <div class="main_content feature">
+                <h2 class="text_wt">Download Link</h2>
+                <div class="line"></div>
+                <p class="text_wt">Note that the datasets will ONLY be released to participants who have registered for
+                    the
+                    challenge during the competition period. After the challenge is completed, we will make the data
+                    publically available to the whole research community.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="item9">
+        <div class="bg ftbg"
+             style="background-image: url(assets/images/18.jpg);background-attachment:fixed;background-size:cover;">
+            <div class="main_content feature">
+                <h2>Task Description</h2>
+                <div class="line2"></div>
+                <p>This year we will focus on one particular task: beauty and personal care product recognition.
+                    Meanwhile,
+                    we are open for innovative self-proposed topics.</p>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <h4 class="panel-title">
+                            <br>
+                            Main Task: Beauty and personal care product recognition
+                        </h4>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p class="text">Given a real-world image containing one beauty or personal care item
+                                    (some
+                                    samples are given below), the task is to match the real-world example of this item
+                                    to
+                                    the same item in the Perfect-500K data set. This is a practical but extremely
+                                    challenging task, given the limitation that only images from e-commerce sites are
+                                    available in Perfect-500K and no real-world examples will be provided in
+                                    advance.</p>
+                                <div class="img-box5">
+                                    <img class="img" src="assets/images/sample-1.jpg" alt="sample">
+                                </div>
+                                <div class="img-box5">
+                                    <img class="img" src="assets/images/sample-2.jpg" alt="sample">
+                                </div>
+                                <div class="img-box5">
+                                    <img class="img" src="assets/images/sample-3.jpg" alt="sample">
+                                </div>
+                                <div class="img-box5">
+                                    <img class="img" src="assets/images/sample-4.jpg" alt="sample">
+                                </div>
+                                <div class="img-box5">
+                                    <img class="img" src="assets/images/sample-5.jpg" alt="sample">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="item10">
+        <div class="bg ftbg"
+             style="background-image: url(assets/images/17.jpg);background-attachment:fixed;background-size:cover;">
+            <div class="main_content feature board-box">
+                <h2 class="text_wt">Submission Format & Evaluation Metrics</h2>
+                <div class="line"></div>
+                <p class="text_wt">
+                    Each team is allowed to submit the results of at most five runs, selecting one run as the primary
+                    run of
+                    the submission (we do not guarantee that we will evaluate additional runs), which will be measured
+                    for
+                    performance comparison across teams.
+                    Each submission is required to be formatted as a csv file, where each line contains an image id
+                    followed
+                    by the predicted label. It looks as follows:</p>
+                <div id="submissionCollapseOne">
+                    <div class="panel-body">
+	            <pre><code>&lt;Test Image ID id#1&gt;, &lt;Training Image ID id#1&gt;<br>&lt;Test Image ID id#2&gt;, &lt;Training Image ID id#2&gt;<br>…<br>&lt;Test Image ID id#N&gt;, &lt;Training Image ID id#N&gt;
+                  </code>
+                </pre>
+                    </div>
+                </div>
+                <p>We evaluate the submissions to this challenge based on the test set in terms of the classification
+                    accuracy. </p>
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="item11">
+        <div class="bg ftbg"
+             style="background-image: url(assets/images/17.jpg);background-attachment:fixed;background-size:cover;">
+            <div class="main_content feature board-box">
+                <h2 class="text_wt">Leader Board</h2>
+                <div class="line"></div>
+                <div class="text_wt">
+                    <br><br><br>
+                    <h3>Chart will update <br>according to participant performance</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">Copyright © Perfect Corp. 2018</div>
+    </div>
+</div>
+</body>
+</html>
