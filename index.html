@@ -25,6 +25,7 @@
             });
             $("#menu_m div a").click(function () {
                 $("#sider_box").toggle("slow");
+                console.log($(window).scrollTop());
             });
         })
 
@@ -63,8 +64,8 @@
             <li class=""><a id="menu5" href="#item5">Main Organizers</a></li>
             <li class=""><a id="menu6" href="#item6">Sponsors</a></li>
             <li class=""><a id="menu7" href="#item7">Main Contact</a></li>
-            <li class=""><a id="menu9" href="#item9">Challenge</a></li>
             <li class=""><a id="menu8" href="#item8">Dataset</a></li>
+            <li class=""><a id="menu9" href="#item9">Challenge</a></li>
             <li class=""><a href="https://recognition-challenge.typeform.com/to/oWXgce" target="blank">Register</a></li>
             <li class=""><a href="mailto:challenge@perfectcorp.com">Email</a></li>
             <li class=""><a id="menu11" href="#item11">Leader Board</a></li>
@@ -108,11 +109,11 @@
                         <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
                         </a>
                     </div>
-                    <div class="col-md-1"><a href="#item9"><span>Challenge</span></a>
+                    <div class="col-md-1"><a href="#item8"><span>Dataset</span></a>
                         <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
                         </a>
                     </div>
-                    <div class="col-md-1"><a href="#item8"><span>Dataset</span></a>
+                    <div class="col-md-1"><a href="#item9"><span>Challenge</span></a>
                         <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
                         </a>
                     </div>
@@ -184,11 +185,11 @@
             </div>
         </div>
     </div>
-    <div class="pages">
+    <div class="pages" id="item2">
         <div class="bg ftbg"
              style="background-image: url(assets/images/18.jpg);background-attachment:fixed;background-size:cover;">
         </div>
-        <div class="main_content feature tech2" id="item2">
+        <div class="main_content feature tech2">
             <h2>Participation</h2>
             <div class="line2"></div>
             <div class="text_bk">
