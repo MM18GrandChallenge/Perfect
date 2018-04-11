@@ -69,9 +69,9 @@ $(function() {
         //$('#item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item11').on('inview', inviewFun);
         //$('#item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item11').on('inview', inviewFun);
         //console.log($(this));
-        console.log("start timer");
+        //console.log("start timer");
         setTimeout(function(){
-            console.log("release Lock!!");
+            //console.log("release Lock!!");
             LOCK = false;
         }, 1000);
     });
@@ -88,66 +88,68 @@ function inviewFun(event, visible) {
      */
     if (visible) {
         if (LOCK) {
-            console.log("lock: ", event.target);
+            //console.log("lock: ", event.target);
             return 0;
         }
-        console.log(event.target);
+        //console.log(event.target);
         if (event.target === $('#item1')[0]) {
-            console.log("item1");
+            //console.log("item1");
             $('li a').removeClass("menu-active");
             $('#menu1').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item2')[0]) {
-            console.log("item2");
+            //console.log("item2");
             $('li a').removeClass("menu-active");
             $('#menu2').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item3')[0]) {
-            console.log("item3");
+            //console.log("item3");
             $('li a').removeClass("menu-active");
             $('#menu3').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item4')[0]) {
-            console.log("item4");
+            //console.log("item4");
             $('li a').removeClass("menu-active");
             $('#menu4').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item5')[0]) {
-            console.log("item5");
+            //console.log("item5");
             $('li a').removeClass("menu-active");
             $('#menu5').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item6')[0]) {
-            console.log("item6");
+            //console.log("item6");
             $('li a').removeClass("menu-active");
             $('#menu6').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item7')[0]) {
-            console.log("item7");
+            //console.log("item7");
             $('li a').removeClass("menu-active");
             $('#menu7').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item8')[0]) {
-            console.log("item8");
+            //console.log("item8");
             $('li a').removeClass("menu-active");
             $('#menu8').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item9')[0]) {
-            console.log("item9");
+            //console.log("item9");
             $('li a').removeClass("menu-active");
             $('#menu9').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         } else if (event.target === $('#item11')[0]) {
-            console.log("item11");
+            //console.log("item11");
             $('li a').removeClass("menu-active");
             $('#menu11').addClass("menu-active");
-            LOCK = true;
+            //LOCK = true;
         }
+        /*
         console.log("start timer");
         setTimeout(function(){
             console.log("release Lock!!");
             LOCK = false;
         }, 500);
+        */
     }
 
 }
