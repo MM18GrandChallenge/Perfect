@@ -10,6 +10,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.js"></script>
     <script>
         function myFunction() {
             var x = document.getElementById('s_bar');
@@ -134,14 +135,14 @@
         </div>
     </div>
     <!--overview-->
-    <div class="pages overview_pc" id="item1">
+    <div class="pages overview_pc">
         <div style="background:#000;background-attachment:fixed;background-size:cover;">
             <div class="video_top">
                 <video height="auto" playsinline autoplay loop muted class="video_box">
                     <source src="assets/images/index.mp4" type="video/mp4" loop="" playsinline="" autoplay="" muted="">
                     Your browser does not support the video tag.
                 </video>
-                <div class="tech_content">
+                <div class="tech_content" id="item1">
                     <h1 class="top_title">AI Meets Beauty</i></h1>
                     <h3 class="text_wt texth3">Perfect Half Million Beauty Product Image Recognition Challenge</h3>
                     <div class="model">
@@ -185,11 +186,12 @@
             </div>
         </div>
     </div>
-    <div class="pages">
+    <div class="tech2"></div>
+    <div class="pages" id="item2">
         <div class="bg ftbg"
              style="background-image: url(assets/images/18.jpg);background-attachment:fixed;background-size:cover;">
         </div>
-        <div class="main_content feature tech2" id="item2">
+        <div class="main_content feature">
             <h2>Participation</h2>
             <div class="line2"></div>
             <div class="text_bk">
