@@ -552,20 +552,15 @@
                 <h2 class="text_wt">Submission Format & Evaluation Metrics</h2>
                 <div class="line"></div>
                 <p class="text_wt">
-                    Each team is allowed to submit the results of at most five runs, selecting one run as the primary
-                    run of the submission (we do not guarantee that we will evaluate additional runs), which will be
-                    measured for performance comparison across teams.
-                    Each submission is required to be formatted as a csv file, where each line contains an image id
-                    followed by the predicted label. It looks as follows:</p>
-                <div id="submissionCollapseOne">
+                    Each team is allowed to submit the results of at most five runs, selecting one run as the primary run of the submission (we do not guarantee that we will evaluate additional runs), which will be measured for performance comparison across teams. Each submission is required to be formatted as a csv file, where each line contains an image id followed by seven predicted labels sorted by confidence in descending order. It looks as follows:</p>
+                    <div id="submissionCollapseOne">
                     <div class="panel-body">
-	            <pre><code>&lt;Test Image ID id#1&gt;, &lt;Training Image ID id#1&gt;<br>&lt;Test Image ID id#2&gt;, &lt;Training Image ID id#2&gt;<br>…<br>&lt;Test Image ID id#N&gt;, &lt;Training Image ID id#N&gt;
+	            <pre><code style="overflow-y: scroll;overflow-x: scroll;">&lt;Test Image ID id#1&gt;, &lt;Training Image ID id#1_1&gt;, &lt;Training Image ID id#1_2&gt;, ..., &lt;Training Image ID id#1_6&gt;, &lt;Training Image ID id#1_7&gt;<br>&lt;Test Image ID id#2&gt;, &lt;Training Image ID id#2_1&gt;, &lt;Training Image ID id#2_2&gt;, ..., &lt;Training Image ID id#2_6&gt;, &lt;Training Image ID id#2_7&gt;<br>…<br>&lt;Test Image ID id#N&gt;, &lt;Training Image ID id#N_1&gt;, &lt;Training Image ID id#N_2&gt;, ..., &lt;Training Image ID id#N_6&gt;, &lt;Training Image ID id#N_7&gt;
                   </code>
                 </pre>
                     </div>
                 </div>
-                <p class="text_wt">We evaluate the submissions to this challenge based on the test set in terms of the
-                    classification accuracy. </p>
+                <p class="text_wt">For each test image, the evaluation metric is Mean Average Precision@7 (MAP@7). The performance of each individual test image is then averaged to evaluate the submissions to this challenge.</p>
             </div>
         </div>
     </div>
