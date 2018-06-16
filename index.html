@@ -29,8 +29,16 @@
                 $("#sider_box").toggle("slow");
                 console.log($(window).scrollTop());
             });
-        })
-
+        });
+        $(document).ready(function() {
+          var localTime = Math.floor(Date.now() / 1000);
+          var endTime = 1529064000;
+          if (localTime > endTime) {
+            $("#menu_submission").hide();
+            $("#nav_menu_submission").hide();
+            $("#submission").hide();
+          }
+        });
     </script>
 
     <style type="text/css">
@@ -68,7 +76,7 @@
             <li class=""><a id="menu7" href="#item7">Main Contact</a></li>
             <li class=""><a id="menu8" href="#item8">Dataset</a></li>
             <li class=""><a id="menu9" href="#item9">Challenge</a></li>
-            <li class=""><a href="https://recognition-challenge.typeform.com/to/OtCgeR" target="blank">Result Submission</a></li>
+            <li id="menu_submission"><a href="https://recognition-challenge.typeform.com/to/OtCgeR" target="blank">Result Submission</a></li>
             <li class=""><a href="https://recognition-challenge.typeform.com/to/oWXgce" target="blank">Register</a></li>
             <li class=""><a href="mailto:challenge@perfectcorp.com">Email</a></li>
             <li class=""><a id="menu11" href="#item11">Leader Board</a></li>
@@ -117,7 +125,7 @@
                     <div class="col-md-1"><a href="#item9"><span>Challenge</span></a>
                         <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
                     </div>
-                    <div class="col-md-1"><a href="https://recognition-challenge.typeform.com/to/OtCgeR" target="blank"><span>Result Submission</span></a>
+                    <div id="nav_menu_submission" class="col-md-1"><a href="https://recognition-challenge.typeform.com/to/OtCgeR" target="blank"><span>Result Submission</span></a>
                         <div class="icon_arrow"><img src="assets/images/guide_right_wt.png"></div>
                     </div>
                     <div class="col-md-1"><a href="https://recognition-challenge.typeform.com/to/oWXgce" target="blank"><span>Register</span></a>
@@ -559,8 +567,10 @@
                     </div>
                 </div>
                 <p class="text_wt">For each test image, the evaluation metric is Mean Average Precision@7 (MAP@7). The performance of each individual test image is then averaged to evaluate the submissions to this challenge.</p>
-                <br/>
-                <a href="https://recognition-challenge.typeform.com/to/OtCgeR" target="blank"><h3>Result Submission</h3></a>
+                <div id="submission">
+                  <br/>
+                  <a href="https://recognition-challenge.typeform.com/to/OtCgeR" target="blank"><h3>Result Submission</h3></a>
+                </div>
             </div>
         </div>
     </div>
